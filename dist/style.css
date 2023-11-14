@@ -336,3 +336,195 @@ body {
   font-size: 14px;
   line-height: normal;
 }
+
+.concert__row {
+  padding-bottom: 120px;
+}
+.concert__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.concert__top-button {
+  display: flex;
+  padding: 8px 20px;
+  border-radius: 37px;
+  background-color: #FFF;
+  box-sizing: border-box;
+}
+.concert__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.concert__card {
+  display: flex;
+  background-color: #FFF;
+  max-height: 265px;
+}
+.concert__card:nth-child(3) .concert__card-cities {
+  padding: 18.5px 0;
+}
+.concert__card:nth-child(4) .concert__card-cities {
+  padding: 52.5px 0;
+}
+.concert__card:nth-child(4) .concert__card-cities button:last-child {
+  background-color: #FFF;
+  border: 1px solid rgba(13, 13, 13, 0.1);
+}
+.concert__card:nth-child(4) .concert__card-cities button:last-child span:first-child {
+  color: #0D0D0D;
+}
+.concert__card:nth-child(4) .concert__card-cities button:last-child span:nth-child(2) {
+  color: rgba(13, 13, 13, 0.6);
+  font-size: 14px;
+  line-height: normal;
+}
+.concert__card:nth-child(5) .concert__card-cities {
+  padding: 3px 0;
+}
+.concert__card-city {
+  display: flex;
+  gap: 5px;
+  padding: 6px 15px;
+  box-sizing: border-box;
+  border-radius: 37px;
+  border: 1px solid rgba(13, 13, 13, 0.1);
+  max-height: 32px;
+  background-color: #FFF;
+  align-items: center;
+}
+.concert__card-city span:nth-child(2) {
+  color: rgba(13, 13, 13, 0.6);
+  font-size: 14px;
+  line-height: normal;
+}
+.concert__card-cities {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15.5px 0;
+  max-width: 312.5px;
+  box-sizing: border-box;
+  gap: 5px;
+}
+.concert__card-cities button:last-child {
+  background-color: #2C2F31;
+}
+.concert__card-cities button:last-child span {
+  color: #FFF;
+}
+.concert__card-content {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.concert__card-image {
+  width: 50%;
+  position: relative;
+}
+.concert__card-more {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  background-color: transparent;
+}
+.concert__card-info {
+  padding: 7px 22px 7px 15px;
+  border-radius: 7px 0 0 7px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+}
+.concert__card-icon {
+  padding: 8px 12.5px;
+  background-color: #FFB21C;
+  border-radius: 0px 7px 7px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.concert__bottom {
+  width: 100%;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #2C2F31;
+  box-sizing: border-box;
+  border-radius: 30px;
+  margin-top: 40px;
+}
+.concert__bottom span {
+  color: #FFF;
+}
+
+.stock__row {
+  padding-bottom: 100px;
+}
+.stock__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.stock__top-button {
+  display: flex;
+  padding: 8px 20px;
+  border-radius: 37px;
+  background-color: #FFF;
+  box-sizing: border-box;
+}
+.stock__promo {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.stock__promo-content {
+  display: flex;
+  padding: 30.5px 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFF;
+  width: 100%;
+  max-height: 110px;
+  box-sizing: border-box;
+}
+.stock__promo-content div:first-child {
+  max-width: 360px;
+  width: 100%;
+}
+.stock__promo-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-height: 49px;
+  max-width: 350px;
+  width: 100%;
+}
+.stock__promo-info span span {
+  font-weight: 700;
+  line-height: 130%;
+}
+.stock__promo-draw {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  max-width: 250px;
+  width: 100%;
+  justify-content: end;
+}
+.stock__promo-draw span {
+  font-weight: 700;
+  line-height: 130%;
+  max-width: 200px;
+}
+.stock__promo-draw svg {
+  border-radius: 100px;
+  background-color: #FFB21C;
+  padding: 10px;
+}
