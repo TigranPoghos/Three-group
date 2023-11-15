@@ -17,8 +17,12 @@ a {
 }
 
 button {
+  padding: 0;
+  font-family: "Inter";
+  font-weight: 400;
   border: none;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .title {
@@ -162,6 +166,7 @@ body {
   max-width: 116px;
   box-sizing: border-box;
   cursor: pointer;
+  align-items: center;
 }
 .header input {
   padding: 8px 15px;
@@ -268,6 +273,7 @@ body {
   width: 227px;
   background-color: transparent;
   max-height: 38px;
+  align-items: center;
 }
 .tours__content-button span:first-child {
   color: #FFF;
