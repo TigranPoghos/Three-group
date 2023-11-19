@@ -753,8 +753,15 @@ body {
   font-weight: 700;
   line-height: 130%;
 }
+.best__right {
+  display: flex;
+  flex-direction: column;
+}
 .best__right-image {
   position: relative;
+}
+.best__right-image img {
+  border-radius: 12px 12px 0 0;
 }
 .best__right-Title {
   display: flex;
@@ -779,4 +786,22 @@ body {
   align-items: center;
   font-size: 14px;
   line-height: normal;
+}
+.best__right-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #FFF;
+  border-radius: 0 0 12px 12px;
+}
+.best__right-info span span {
+  font-weight: 700;
+  line-height: 130%;
+}
+.best__right-block {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px 12px 0 0;
 }

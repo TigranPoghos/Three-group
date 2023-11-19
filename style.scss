@@ -862,9 +862,15 @@ body {
     }
 
     &__right {
+        display: flex;
+        flex-direction: column;
 
         &-image {
             position: relative;
+
+            & img {
+                border-radius: 12px 12px 0 0;
+            }
         }
 
         &-Title {
@@ -892,6 +898,29 @@ body {
             align-items: center;
             font-size: 14px;
             line-height: normal;
+        }
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #FFF;
+            border-radius: 0 0 12px 12px;
+
+            & span {
+                & span {
+                    font-weight: 700;
+                    line-height: 130%;
+                }
+            }
+        }
+
+        &-block {
+            display: flex;
+            flex-direction: column;
+            border-radius: 12px 12px 0 0;
         }
     }
 }
