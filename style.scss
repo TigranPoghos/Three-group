@@ -425,8 +425,13 @@ body {
     &__banner {
         position: relative;
 
-        & img {
+        & img:first-child {
             border-radius: 12px 12px 70px 12px;
+        }
+
+        & img:nth-child(2) {
+            border-radius: 12px 12px 70px 12px;
+            display: none;
         }
 
         &-info {
@@ -499,30 +504,60 @@ body {
         background-color: #FFF;
 
         &:nth-child(3) &-cities {
-            padding: 18.5px 0;
+            padding: 0;
+
+            & .omsk {
+                display: none;
+            }
+
+            & .saratov {
+                display: none;
+            }
         }
 
         &:nth-child(4) &-cities {
-            padding: 52.5px 0;
+            padding: 15.5px 0;
 
             & button:last-child {
-                background-color: #FFF;
-                border: 1px solid rgba(13, 13, 13, 0.10);
+                background-color: #2C2F31;
+                border: none;
                 
                 & span:first-child {
-                    color: #0D0D0D;
+                    color: #FFF;
                 }
+            }
 
-                & span:nth-child(2) {
-                    color: rgba(13, 13, 13, 0.60);
-                    font-size: 14px;
-                    line-height: normal;
-                }
+            & .jeleznogorsk {
+                display: none;
+            }
+
+            & .omsk {
+                display: none;
+            }
+
+            & .saratov {
+                display: none;
+            }
+
+            & .more-4 {
+                display: none;
             }
         }
 
         &:nth-child(5) &-cities {
             padding: 3px 0;
+
+            & .omsk {
+                display: none;
+            }
+
+            & .saratov {
+                display: none;
+            }
+
+            .ulyanovsk {
+                display: none;
+            }
         }
 
         &-city {
@@ -1010,3 +1045,152 @@ body {
     }
 }
 
+@media (max-width:1920px) {
+    .container {
+        max-width: 1366px;
+        padding: 0 60px;
+    }
+
+    .header {
+        &__nav {
+            gap: 20px;
+        }
+
+        &__contact {
+            gap: 20px;
+        }
+    }
+
+    .tours {
+        &__content {
+            padding: 54px 50px;
+
+            &-button {
+                padding: 7px 15px;
+                width: 199px;
+            }
+
+            &-more {
+                padding: 7px 15px;
+                width: 199px;
+            }
+        }
+
+        & img:first-child {
+            display: none;
+        }
+
+        & img:nth-child(2) {
+            display: flex;
+        }
+    }
+
+    .concert {
+        &__card {
+            &-image {
+                max-width: 306px;
+                overflow: hidden;
+            }
+
+            &-cities {
+                max-width: 267px;
+            }
+
+            &:nth-child(1) &-cities {
+                .jeleznogorsk {
+                    display: none;
+                }
+
+                .saratov {
+                    display: none;
+                }
+
+                .omsk {
+                    display: none;
+                }
+            }
+
+            &:nth-child(2) &-cities {
+                .jeleznogorsk {
+                    display: none;
+                }
+
+                .saratov {
+                    display: none;
+                }
+
+                .omsk {
+                    display: none;
+                }
+            }
+
+            &:nth-child(3) &-cities {
+                .jeleznogorsk {
+                    display: none;
+                }
+
+                .saratov {
+                    display: none;
+                }
+
+                .omsk {
+                    display: none;
+                }
+            }
+
+            &:nth-child(4) &-cities {
+                .jeleznogorsk {
+                    display: none;
+                }
+
+                .saratov {
+                    display: none;
+                }
+
+                .omsk {
+                    display: none;
+                }
+
+                .more-4 {
+                    display: flex;
+                }
+            }
+
+            &:nth-child(5) &-cities {
+                .jeleznogorsk {
+                    display: none;
+                }
+
+                .saratov {
+                    display: none;
+                }
+
+                .omsk {
+                    display: none;
+                }
+
+                .ulyanovsk {
+                    display: flex;
+                }
+
+                .krasnodar {
+                    display: none;
+                }
+            }
+
+            &:nth-child(6) &-cities {
+                .jeleznogorsk {
+                    display: none;
+                }
+
+                .saratov {
+                    display: none;
+                }
+
+                .omsk {
+                    display: none;
+                }
+            }
+        }
+    }
+}
