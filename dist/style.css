@@ -263,7 +263,6 @@ body {
   max-width: 773px;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 18px;
   justify-content: center;
 }
 .footer__menu a {
@@ -658,6 +657,13 @@ body {
   left: 0;
   top: 0;
 }
+.network__row-background1366 {
+  fill: #FFB21C;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
 .network__title {
   z-index: 1;
   margin-bottom: 20px;
@@ -792,6 +798,9 @@ body {
   padding: 30px 20px 20px 20px;
   position: relative;
   background-color: #FFB21C;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .best__bottom-right {
   display: flex;
@@ -808,15 +817,22 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 0px 0px 147px 0px;
+  border-radius: 12px 12px 147px 12px;
+}
+.best__left-image1366 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 12px 12px 147px 12px;
+  display: none;
 }
 .best__left-Title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 529px;
   z-index: 1;
   position: relative;
+  min-width: 908px;
 }
 .best__left-title {
   font-size: 42px;
@@ -833,7 +849,6 @@ body {
   align-items: center;
   font-size: 14px;
   line-height: normal;
-  margin-left: 476px;
 }
 .best__left-info {
   display: flex;
@@ -860,6 +875,12 @@ body {
 }
 .best__right-image img {
   border-radius: 12px 12px 0 0;
+}
+.best__right-image img:first-child {
+  display: block;
+}
+.best__right-image img:nth-child(2) {
+  display: none;
 }
 .best__right-Title {
   display: flex;
@@ -1001,5 +1022,50 @@ body {
   }
   .concert__card:nth-child(6) .concert__card-cities .omsk {
     display: none;
+  }
+  .network__row {
+    padding: 43.5px 52.28px;
+  }
+  .network__row-background {
+    display: none;
+  }
+  .network__row-background1366 {
+    display: flex;
+  }
+  .network__title {
+    max-width: 514px;
+  }
+  .network__like {
+    left: 593px;
+  }
+  .best__left-image {
+    display: none;
+  }
+  .best__left-image1366 {
+    display: block;
+  }
+  .best__left-Title {
+    min-width: 784px;
+  }
+  .best__right-image img:first-child {
+    display: none;
+  }
+  .best__right-image img:nth-child(2) {
+    display: block;
+  }
+  .footer__menu {
+    max-width: 815px;
+  }
+  .footer__menu a {
+    margin-left: 20px;
+  }
+  .footer__menu a:nth-child(9) {
+    margin-left: 20px;
+  }
+  .footer__menu a:nth-child(10) {
+    margin-left: 0;
+  }
+  .footer__bottom {
+    padding: 50px 0;
   }
 }
