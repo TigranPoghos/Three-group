@@ -847,6 +847,11 @@ body {
             gap: 12px;
         }
 
+        &-logo {
+            max-width: 37px;
+            max-height: 37px;
+        }
+
         &-name {
             display: flex;
             flex-direction: column;

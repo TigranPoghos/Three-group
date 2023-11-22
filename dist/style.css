@@ -739,6 +739,10 @@ body {
   display: flex;
   gap: 12px;
 }
+.network__frame-logo {
+  max-width: 37px;
+  max-height: 37px;
+}
 .network__frame-name {
   display: flex;
   flex-direction: column;
