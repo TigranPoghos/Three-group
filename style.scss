@@ -19,6 +19,10 @@ ul,li {
     list-style: none;
 }
 
+li {
+    display: flex;
+}
+
 a {
     text-decoration: none;
 }
@@ -138,9 +142,11 @@ body {
         max-width: 1082px;
 
         &-item {
-            font-size: 14px;
-            line-height: normal;
-            color:rgba(13, 13, 13, 0.60);
+            & a {
+                font-size: 14px;
+                line-height: normal;
+                color:rgba(13, 13, 13, 0.60);
+            }
         }
     }
 
@@ -288,20 +294,21 @@ body {
         flex-wrap: wrap;
         justify-content: center;
 
-        & a {
+        & li {
             margin-left: 30px;
+            display: flex;
         }
 
-        & a:first-child {
+        & li:first-child {
             margin-left: 0;
             margin-bottom: 20px;
         }
 
-        & a:nth-child(9) {
+        & li:nth-child(9) {
             margin-left: 0;
         }
 
-        &-item {
+        &-item a {
             color:#FFF;
             text-align: center;
             font-size: 14px;
@@ -316,7 +323,7 @@ body {
         align-items: center;
         padding: 50px 0 20px 0;
 
-        &-item {
+        &-item a {
             color: rgba(255, 255, 255, 0.30);
             font-size: 14px;
             font-style: normal;
