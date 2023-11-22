@@ -8,7 +8,9 @@ p{
 
 img {
     display: block;
-    object-fit: contain;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
 ul,li {
@@ -175,6 +177,11 @@ body {
         box-sizing: border-box;
         cursor: pointer;
         align-items: center;
+    }
+
+    &__logo {
+        max-width: 133px;
+        width: 100%;
     }
 
     & input {
@@ -424,13 +431,10 @@ body {
     &__banner {
         position: relative;
 
-        & img:first-child {
+        & img {
             border-radius: 12px 12px 70px 12px;
-        }
-
-        & img:nth-child(2) {
-            border-radius: 12px 12px 70px 12px;
-            display: none;
+            height: 100%;
+            width: 100%;
         }
 
         &-info {
@@ -679,6 +683,11 @@ body {
         justify-content: space-between;
         border-radius: 12px;
         margin-bottom: 20px;
+
+        &-image {
+            max-width: 165px;
+            width: 100%;
+        }
 
         &-content {
             display: flex;
@@ -942,14 +951,6 @@ body {
             border-radius: 12px 12px 147px 12px;
         }
 
-        &-image1366 {
-            position: absolute;
-            top: 0;
-            left: 0;
-            border-radius: 12px 12px 147px 12px;
-            display: none;
-        }
-
         &-Title {
             display: flex;
             justify-content: space-between;
@@ -1007,14 +1008,6 @@ body {
 
             & img {
                 border-radius: 12px 12px 0 0;
-            }
-
-            & img:first-child {
-                display: block;
-            }
-
-            & img:nth-child(2) {
-                display: none;
             }
         }
 
@@ -1101,12 +1094,8 @@ body {
             }
         }
 
-        & img:first-child {
-            display: none;
-        }
-
-        & img:nth-child(2) {
-            display: flex;
+        &__banner {
+            max-width: 718px;
         }
     }
 
@@ -1243,28 +1232,8 @@ body {
 
     .best {
         &__left {
-            &-image {
-                display: none;
-            }
-
-            &-image1366 {
-                display: block;
-            }
-
             &-Title {
                 min-width: 784px;
-            }
-        }
-
-        &__right {
-            &-image {
-                & img:first-child {
-                    display: none;
-                }
-    
-                & img:nth-child(2) {
-                    display: block;
-                }
             }
         }
     }
