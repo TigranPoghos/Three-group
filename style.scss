@@ -1376,68 +1376,37 @@ body {
 
     .concert {
         &__card {
+            width: 100%;
+
             &-image {
-                max-width: 306px;
                 overflow: hidden;
             }
 
             &-cities {
-                max-width: 267px;
-            }
-
-            &:nth-child(1) &-cities {
-                .jeleznogorsk {
-                    display: none;
-                }
-
-                .saratov {
-                    display: none;
-                }
-
-                .omsk {
-                    display: none;
-                }
-            }
-
-            &:nth-child(2) &-cities {
-                .jeleznogorsk {
-                    display: none;
-                }
-
-                .saratov {
-                    display: none;
-                }
-
-                .omsk {
-                    display: none;
-                }
+                max-width: 314px;
             }
 
             &:nth-child(3) &-cities {
-                .jeleznogorsk {
-                    display: none;
-                }
-
                 .saratov {
-                    display: none;
+                    display: flex;
                 }
 
                 .omsk {
-                    display: none;
+                    display: flex;
                 }
             }
 
             &:nth-child(4) &-cities {
-                .jeleznogorsk {
-                    display: none;
-                }
-
                 .saratov {
-                    display: none;
+                    display: flex;
                 }
 
                 .omsk {
-                    display: none;
+                    display: flex;
+                }
+
+                .jeleznogorsk {
+                    display: flex;
                 }
 
                 .more-4 {
@@ -1446,32 +1415,10 @@ body {
             }
 
             &:nth-child(5) &-cities {
-                .jeleznogorsk {
-                    display: none;
-                }
-
-                .saratov {
-                    display: none;
-                }
-
-                .omsk {
-                    display: none;
-                }
-
                 .ulyanovsk {
                     display: flex;
                 }
 
-                .krasnodar {
-                    display: none;
-                }
-            }
-
-            &:nth-child(6) &-cities {
-                .jeleznogorsk {
-                    display: none;
-                }
-
                 .saratov {
                     display: none;
                 }
@@ -1479,6 +1426,38 @@ body {
                 .omsk {
                     display: none;
                 }
+            }
+
+            &:nth-child(6) {
+                display: none;
+            }
+        }
+    }
+
+    .stock {
+        &__promo {
+            &-content {
+                flex-direction: column;
+                padding: 20px;
+                align-items: normal;
+                min-height: 195px;
+
+                & div:first-child {
+                    margin-bottom: 5px;
+                }
+            }
+
+            &-image {
+                max-width: 191px;
+            }
+
+            &-info {
+                gap: 0;
+            }
+
+            &-draw {
+                justify-content: space-between;
+                max-width: 100%;
             }
         }
     }
