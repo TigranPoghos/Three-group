@@ -232,6 +232,12 @@ body {
   gap: 10px;
   box-sizing: border-box;
 }
+.header__adap {
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+  padding: 15px 0;
+}
 
 .footer {
   flex: 0 0 auto;
@@ -939,6 +945,144 @@ body {
   }
   .header__contact {
     gap: 20px;
+  }
+  .tours__content {
+    padding: 54px 50px;
+  }
+  .tours__content-button {
+    padding: 7px 15px;
+    width: 199px;
+  }
+  .tours__content-more {
+    padding: 7px 15px;
+    width: 199px;
+  }
+  .tours__banner {
+    max-width: 718px;
+  }
+  .concert__card-image {
+    max-width: 306px;
+    overflow: hidden;
+  }
+  .concert__card-cities {
+    max-width: 267px;
+  }
+  .concert__card:nth-child(1) .concert__card-cities .jeleznogorsk {
+    display: none;
+  }
+  .concert__card:nth-child(1) .concert__card-cities .saratov {
+    display: none;
+  }
+  .concert__card:nth-child(1) .concert__card-cities .omsk {
+    display: none;
+  }
+  .concert__card:nth-child(2) .concert__card-cities .jeleznogorsk {
+    display: none;
+  }
+  .concert__card:nth-child(2) .concert__card-cities .saratov {
+    display: none;
+  }
+  .concert__card:nth-child(2) .concert__card-cities .omsk {
+    display: none;
+  }
+  .concert__card:nth-child(3) .concert__card-cities .jeleznogorsk {
+    display: none;
+  }
+  .concert__card:nth-child(3) .concert__card-cities .saratov {
+    display: none;
+  }
+  .concert__card:nth-child(3) .concert__card-cities .omsk {
+    display: none;
+  }
+  .concert__card:nth-child(4) .concert__card-cities .jeleznogorsk {
+    display: none;
+  }
+  .concert__card:nth-child(4) .concert__card-cities .saratov {
+    display: none;
+  }
+  .concert__card:nth-child(4) .concert__card-cities .omsk {
+    display: none;
+  }
+  .concert__card:nth-child(4) .concert__card-cities .more-4 {
+    display: flex;
+  }
+  .concert__card:nth-child(5) .concert__card-cities .jeleznogorsk {
+    display: none;
+  }
+  .concert__card:nth-child(5) .concert__card-cities .saratov {
+    display: none;
+  }
+  .concert__card:nth-child(5) .concert__card-cities .omsk {
+    display: none;
+  }
+  .concert__card:nth-child(5) .concert__card-cities .ulyanovsk {
+    display: flex;
+  }
+  .concert__card:nth-child(5) .concert__card-cities .krasnodar {
+    display: none;
+  }
+  .concert__card:nth-child(6) .concert__card-cities .jeleznogorsk {
+    display: none;
+  }
+  .concert__card:nth-child(6) .concert__card-cities .saratov {
+    display: none;
+  }
+  .concert__card:nth-child(6) .concert__card-cities .omsk {
+    display: none;
+  }
+  .network__row {
+    padding: 43.5px 52.28px;
+  }
+  .network__row-background {
+    display: none;
+  }
+  .network__row-background1366 {
+    display: flex;
+  }
+  .network__title {
+    max-width: 514px;
+  }
+  .network__like {
+    left: 593px;
+  }
+  .best__left-Title {
+    min-width: 784px;
+  }
+  .footer__menu {
+    max-width: 815px;
+  }
+  .footer__menu a {
+    margin-left: 20px;
+  }
+  .footer__menu a:nth-child(9) {
+    margin-left: 20px;
+  }
+  .footer__menu a:nth-child(10) {
+    margin-left: 0;
+  }
+  .footer__bottom {
+    padding: 50px 0;
+  }
+}
+@media (max-width: 1920px) {
+  .container {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+  .header__top {
+    display: none;
+  }
+  .header__city {
+    display: none;
+  }
+  .header__messengers {
+    display: none;
+  }
+  .header__logo {
+    display: none;
+  }
+  .header__adap {
+    display: flex;
   }
   .tours__content {
     padding: 54px 50px;

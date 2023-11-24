@@ -245,6 +245,13 @@ body {
             box-sizing: border-box;
         }
     }
+
+    &__adap {
+        align-items: center;
+        justify-content: space-between;
+        display: none;
+        padding: 15px 0;
+    }
 }
 
 .footer {
@@ -1088,6 +1095,216 @@ body {
 
         &__contact {
             gap: 20px;
+        }
+    }
+
+    .tours {
+        &__content {
+            padding: 54px 50px;
+
+            &-button {
+                padding: 7px 15px;
+                width: 199px;
+            }
+
+            &-more {
+                padding: 7px 15px;
+                width: 199px;
+            }
+        }
+
+        &__banner {
+            max-width: 718px;
+        }
+    }
+
+    .concert {
+        &__card {
+            &-image {
+                max-width: 306px;
+                overflow: hidden;
+            }
+
+            &-cities {
+                max-width: 267px;
+            }
+
+            &:nth-child(1) &-cities {
+                .jeleznogorsk {
+                    display: none;
+                }
+
+                .saratov {
+                    display: none;
+                }
+
+                .omsk {
+                    display: none;
+                }
+            }
+
+            &:nth-child(2) &-cities {
+                .jeleznogorsk {
+                    display: none;
+                }
+
+                .saratov {
+                    display: none;
+                }
+
+                .omsk {
+                    display: none;
+                }
+            }
+
+            &:nth-child(3) &-cities {
+                .jeleznogorsk {
+                    display: none;
+                }
+
+                .saratov {
+                    display: none;
+                }
+
+                .omsk {
+                    display: none;
+                }
+            }
+
+            &:nth-child(4) &-cities {
+                .jeleznogorsk {
+                    display: none;
+                }
+
+                .saratov {
+                    display: none;
+                }
+
+                .omsk {
+                    display: none;
+                }
+
+                .more-4 {
+                    display: flex;
+                }
+            }
+
+            &:nth-child(5) &-cities {
+                .jeleznogorsk {
+                    display: none;
+                }
+
+                .saratov {
+                    display: none;
+                }
+
+                .omsk {
+                    display: none;
+                }
+
+                .ulyanovsk {
+                    display: flex;
+                }
+
+                .krasnodar {
+                    display: none;
+                }
+            }
+
+            &:nth-child(6) &-cities {
+                .jeleznogorsk {
+                    display: none;
+                }
+
+                .saratov {
+                    display: none;
+                }
+
+                .omsk {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .network {
+        &__row {
+            padding: 43.5px 52.28px;
+
+            &-background {
+                display: none;
+            }
+
+            &-background1366 {
+                display: flex;
+            }
+        }
+
+        &__title {
+            max-width: 514px;
+        }
+
+        &__like {
+            left: 593px;
+        }
+    }
+
+    .best {
+        &__left {
+            &-Title {
+                min-width: 784px;
+            }
+        }
+    }
+
+    .footer {
+        &__menu {
+            max-width: 815px;
+
+            & a {
+                margin-left: 20px;
+            }
+
+            & a:nth-child(9) {
+                margin-left: 20px;
+            }
+
+            & a:nth-child(10) {
+                margin-left: 0;
+            }
+        }
+
+        &__bottom {
+            padding: 50px 0;
+        }
+    }
+}
+
+@media (max-width:1920px) {
+    .container {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+
+    .header {
+        &__top {
+            display: none;
+        }
+
+        &__city {
+            display: none;
+        }
+
+        &__messengers {
+            display: none;
+        }
+
+        &__logo {
+            display: none;
+        }
+
+        &__adap{
+            display: flex;
         }
     }
 
