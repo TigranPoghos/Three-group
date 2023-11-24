@@ -348,11 +348,8 @@ body {
 }
 .tours__content-city {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.tours__content-row {
-  display: flex;
+  max-width: 464px;
+  flex-wrap: wrap;
   gap: 10px;
 }
 .tours__content-button {
@@ -380,6 +377,14 @@ body {
   border-radius: 37px;
   width: 227px;
   background-color: #FFF;
+}
+.tours__content-moreAdap {
+  display: none;
+  padding: 5px 15px;
+  border-radius: 37px;
+  box-sizing: border-box;
+  background-color: #FFF;
+  gap: 5px;
 }
 .tours__content-info {
   display: flex;
@@ -935,7 +940,7 @@ body {
   border-radius: 12px 12px 0 0;
 }
 
-@media (max-width: 1920px) {
+@media (max-width: 1920px) and (min-width: 1366px) {
   .container {
     max-width: 1366px;
     padding: 0 60px;
@@ -953,9 +958,16 @@ body {
     padding: 7px 15px;
     width: 199px;
   }
+  .tours__content-button span:nth-child(2) {
+    font-size: 14px;
+    line-height: normal;
+  }
   .tours__content-more {
     padding: 7px 15px;
     width: 199px;
+  }
+  .tours__content-city {
+    max-width: 408px;
   }
   .tours__banner {
     max-width: 718px;
@@ -1064,7 +1076,7 @@ body {
     padding: 50px 0;
   }
 }
-@media (max-width: 1920px) {
+@media (max-width: 1366px) and (min-width: 768px) {
   .container {
     max-width: 100%;
     padding: 0 30px;
@@ -1084,19 +1096,43 @@ body {
   .header__adap {
     display: flex;
   }
+  .tours__row {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .tours__banner img {
+    min-height: 431px;
+  }
   .tours__content {
-    padding: 54px 50px;
+    padding: 51.5px 50px;
+    border-radius: 12px 12px 147px 12px;
+    gap: 20px;
+  }
+  .tours__content-row {
+    gap: 5px;
+  }
+  .tours__content-info {
+    display: none;
   }
   .tours__content-button {
-    padding: 7px 15px;
-    width: 199px;
+    justify-content: normal;
+    gap: 5px;
+    padding: 5px 15px;
+    width: auto;
   }
-  .tours__content-more {
-    padding: 7px 15px;
-    width: 199px;
+  .tours__content-button span:nth-child(2) {
+    font-size: 14px;
+    line-height: normal;
   }
-  .tours__banner {
-    max-width: 718px;
+  .tours__content-city {
+    max-width: 608px;
+    gap: 5px;
+  }
+  .tours__content-city li:nth-child(8) {
+    display: none;
+  }
+  .tours__content-moreAdap {
+    display: flex;
   }
   .concert__card-image {
     max-width: 306px;

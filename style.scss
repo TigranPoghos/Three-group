@@ -380,12 +380,8 @@ body {
 
         &-city {
             display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        &-row {
-            display: flex;
+            max-width: 464px;
+            flex-wrap: wrap;
             gap: 10px;
         }
 
@@ -417,6 +413,15 @@ body {
             border-radius: 37px;
             width: 227px;
             background-color: #FFF;
+        }
+
+        &-moreAdap {
+            display: none;
+            padding: 5px 15px;
+            border-radius: 37px;
+            box-sizing: border-box;
+            background-color: #FFF;
+            gap: 5px;
         }
 
         &-info {
@@ -1082,7 +1087,7 @@ body {
     }
 }
 
-@media (max-width:1920px) {
+@media (max-width:1920px) and (min-width:1366px) {
     .container {
         max-width: 1366px;
         padding: 0 60px;
@@ -1105,11 +1110,20 @@ body {
             &-button {
                 padding: 7px 15px;
                 width: 199px;
+
+                & span:nth-child(2) {
+                    font-size: 14px;
+                    line-height: normal;
+                }
             }
 
             &-more {
                 padding: 7px 15px;
                 width: 199px;
+            }
+
+            &-city {
+                max-width: 408px;
             }
         }
 
@@ -1280,7 +1294,7 @@ body {
     }
 }
 
-@media (max-width:1920px) {
+@media (max-width:1366px) and (min-width:768px) {
     .container {
         max-width: 100%;
         padding: 0 30px;
@@ -1309,22 +1323,54 @@ body {
     }
 
     .tours {
-        &__content {
-            padding: 54px 50px;
-
-            &-button {
-                padding: 7px 15px;
-                width: 199px;
-            }
-
-            &-more {
-                padding: 7px 15px;
-                width: 199px;
-            }
+        &__row {
+            flex-direction: column-reverse;
+            gap: 20px;
         }
 
         &__banner {
-            max-width: 718px;
+            & img {
+                min-height: 431px;
+            }
+        }
+
+        &__content {
+            padding: 51.5px 50px;
+            border-radius: 12px 12px 147px 12px;
+            gap: 20px;
+
+            &-row {
+                gap: 5px;
+            }
+
+            &-info {
+                display: none;
+            }
+
+            &-button {
+                justify-content: normal;
+                gap: 5px;
+                padding: 5px 15px;
+                width: auto;
+
+                & span:nth-child(2) {
+                    font-size: 14px;
+                    line-height: normal;
+                }
+            }
+
+            &-city {
+                max-width: 608px;
+                gap: 5px;
+
+                & li:nth-child(8) {
+                    display: none;
+                }
+            }
+
+            &-moreAdap {
+                display: flex;
+            }
         }
     }
 
