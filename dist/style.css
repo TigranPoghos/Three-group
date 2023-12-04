@@ -134,7 +134,6 @@ body {
 }
 .header__row {
   position: relative;
-  padding-top: 71px;
 }
 .header__top {
   padding: 15px 0;
@@ -1230,6 +1229,9 @@ body {
   .header__top {
     display: none;
   }
+  .header__row {
+    padding-top: 71px;
+  }
   .header__city {
     display: none;
   }
@@ -1450,6 +1452,9 @@ body {
   }
   .header__top {
     display: none;
+  }
+  .header__row {
+    padding-top: 71px;
   }
   .header__city {
     display: none;

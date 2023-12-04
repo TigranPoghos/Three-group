@@ -131,7 +131,6 @@ body {
 
     &__row {
         position: relative;
-        padding-top: 71px;
     }
 
     &__top {
@@ -1482,6 +1481,10 @@ body {
             display: none;
         }
 
+        &__row {
+            padding-top: 71px;
+        }
+
         &__city {
             display: none;
         }
@@ -1789,6 +1792,10 @@ body {
     .header {
         &__top {
             display: none;
+        }
+
+        &__row {
+            padding-top: 71px;
         }
 
         &__city {
